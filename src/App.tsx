@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './Components/Button'
 import Header from './Components/Header'
+import Home from './Pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <button type="button" className="btn btn-primary">Primary</button>
+      <Home></Home>
     </div>
     // <div style={{minWidth:'100vw',maxWidth:"100vw", display:"flex", minHeight:'100vh', justifyContent:'center'}}>
     //   {/* <Button></Button> */}
