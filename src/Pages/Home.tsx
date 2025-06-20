@@ -2,6 +2,7 @@ import React from "react";
 import viteLogo from "../../public/vite.svg"
 import gitLogo from '../../github.svg'
 import linkedinLogo from '../../linkedin.svg'
+import Sla from '../../SLA.jpg'
 
 function Home() {
     return (
@@ -24,6 +25,19 @@ function Home() {
             </div>
             <div style={{ display: "flex", justifyContent: "center", width: '100%', alignContent: "flex-start" }}>
                 <hr style={{ width: '50%' }} />
+            </div>
+            <div style={{display:"flex", justifyContent:"center"}}>
+                <h2>
+                    Projetos Pessoais
+                </h2>
+            </div>
+            <div style={{ display: "flex", width: "100%", justifyContent: "center", backgroundColor: 'black' }}>
+                <section style={{width:"15%", backgroundColor:"white", borderRadius:15 }}>
+                    <img src={Sla} alt="" style={{width:'100%', borderTopRightRadius:15, borderTopLeftRadius:15}} />
+                    <div style={{display:"flex", padding:20}}>
+                        Some quick example text to build on the card title and make up the bulk of the card’s content.
+                    </div>
+                </section>
             </div>
         </div>
     )
