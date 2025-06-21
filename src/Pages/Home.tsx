@@ -13,9 +13,9 @@ function Home() {
                         <section style={{ display: 'flex', backgroundColor: 'gray', justifyContent: "end", paddingRight: '5%', width: '100%', height: '100%' }}>
                             <img src={viteLogo} alt="vite.svg" style={{ borderRadius: 50, backgroundColor: "black", width: '40%' }} />
                         </section>
-                        <section style={{ display: "flex", backgroundColor: 'green', justifyContent: "end", paddingRight: '5%', width: '100%', height: '100%' }}>
-                            <img src={gitLogo} alt="github.svg" style={{ width: '40px' }} />
-                            <img src={linkedinLogo} alt="linkedin.svg" style={{ width: '40px' }} />
+                        <section style={{ display: "flex", backgroundColor: 'green', justifyContent: "end",alignItems:"center", paddingRight: '5%', width: '100%', height: '100%' }}>
+                            <a href="https://github.com/IagoVinicius12" target="_blank"><img src={gitLogo} alt="github.svg" style={{ width: '40px' }} /></a>
+                            <a href="https://www.linkedin.com/in/iago-vin%C3%ADcius-39b675304/" target="_blank"><img src={linkedinLogo} alt="linkedin.svg" style={{ width: '40px' }} /></a>
                         </section>
                     </div>
                     <div className='2' style={{ display: "flex", backgroundColor: "blue", width: '70%', height: '100%', alignItems: "center", paddingBottom: '4%' }}>
