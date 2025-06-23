@@ -1,0 +1,14 @@
+.diminuir_aumentar {
+  animation: aparecer 0.4s ease forwards;
+}
+
+@keyframes aparecer {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
