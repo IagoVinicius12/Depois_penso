@@ -41,8 +41,8 @@ export default function Carousel() {
     }
     const visibleTexts = texts.slice(index, index + 3)
     return (
-        <div style={{ display: "flex", backgroundColor: "black", justifyContent: "center", alignItems: "center", height: '37%' ,gap:'5px'}}>
-            <button onClick={handlePrev} disabled={index <= 0} style={{ backgroundColor: index > 0 ? 'gray' : 'blue', width: '2%', height: '20%' }}></button>
+        <div style={{ display: "flex",justifyContent: "center", alignItems: "center", height: '37%' ,gap:'5px'}}>
+            <button onClick={handlePrev} disabled={index <= 0} style={{ width: '2%', height: '20%' }}></button>
             {imagens.map((src, index) => (index >= currentIndex && index <= currentIndex + 2 ? (
                 <section 
                 key={index}
