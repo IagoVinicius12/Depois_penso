@@ -1,15 +1,18 @@
 
 import { useState } from "react";
 import './carousel.css'
-
+import Img1 from '../../Images/SLA.jpg'
+import Img2 from '../../Images/SLA1.jpg'
+import Img3 from '../../Images/SLA2.jpg'
+import Img4 from '../../Images/SLA3.jpg'
 
 
 export default function Carousel() {
     const imagens = [
-        '/Images/SLA.jpg',
-        '/Images/SLA1.jpg',
-        '/Images/SLA2.jpg',
-        '/Images/SLA3.jpg',
+        Img1,
+        Img2,
+        Img3,
+        Img4,
     ];
     const texts = [
         'aaaaaa',
