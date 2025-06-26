@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { motion } from 'framer-motion';
+import { useState } from "react"; 
 import './carousel.css'
 
 export default function Carousel() {
