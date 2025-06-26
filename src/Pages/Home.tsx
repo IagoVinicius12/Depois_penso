@@ -44,7 +44,15 @@ function Home() {
                 <section style={{display:"flex",width:'30%',height:'100%',alignItems:'start'}}>
                     ERUGFHUQIEBRGJIHARGJBN HRIAHGUIO4RH HGQERTHUIGHQ UIEHuiergh ue4rhgu9    qh4erg 9    uqgihr59iueqh
                 </section>
-
+            </div>
+            <div style={{flex:1, height:'7%'}}></div>
+            <div style={{ display: "flex", justifyContent: "center", width: '100%', alignContent: "flex-start" }}>
+                <hr style={{ width: '70%' }} />
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", width: '100%', alignContent: "flex-start" , paddingBottom:'100px'}}>
+                <section style={{ width: '70%' }} >
+                    aaaaasd
+                </section>
             </div>
         </div>
     )
