@@ -51,7 +51,7 @@ function Home() {
             </div>
             <div style={{ display: "flex", justifyContent: "center", width: '100%', alignContent: "flex-start" , paddingBottom:'100px'}}>
                 <section style={{ width: '70%' }} >
-                    aaaaasd
+                    @aaaaasd
                 </section>
             </div>
         </div>

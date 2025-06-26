@@ -12,3 +12,7 @@
     opacity: 1;
   }
 }
+
+.aumentar_hover{
+  transform:scale(1.2)
+}

@@ -21,6 +21,8 @@ export default function Carousel() {
     const [index, setIndex] = useState(0);
     const [currentIndex, setCurrentIndex] = useState(index);
     const [change, setChange] = useState(false)
+    const [hovered, setHovered] = useState(false)
+    const [hoveredIndex, setHoveredIndex] = useState(null)
 
     const handleNext = () => {
         setIndex(index + 1)
@@ -39,10 +41,10 @@ export default function Carousel() {
     const visibleImages = imagens.slice(index, index + 3);
     const visibleTexts = texts.slice(index, index + 3)
     return (
-        <div style={{ display: "flex", backgroundColor: "black", justifyContent: "center", alignItems: "center", height: '37%' }}>
+        <div style={{ display: "flex", backgroundColor: "black", justifyContent: "center", alignItems: "center", height: '37%' ,gap:'5px'}}>
             <button onClick={handlePrev} disabled={index <= 0} style={{ backgroundColor: index > 0 ? 'gray' : 'blue', width: '2%', height: '20%' }}></button>
             {imagens.map((src, index) => (index >= currentIndex && index <= currentIndex + 2 ? (
-                <section key={index} style={{ width: "15%", backgroundColor: "white", borderRadius: 15 }} className={change == true ? 'diminuir_aumentar' : 'none'}>
+                <section key={index} style={{ width: "15%", backgroundColor: "white", borderRadius: 15, transform: hoveredIndex === index ? "scale(1.05)" : "scale(1)", transition: "transform 0.3s ease-in-out", zIndex: hoveredIndex === index ? 1 : 0 }} className={change == true ? 'diminuir_aumentar' : 'none'} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={()=>setHoveredIndex(null)}>
                     <img key={index} src={src} alt="" style={{ width: '100%', borderTopRightRadius: 15, borderTopLeftRadius: 15 }} />
                     <div style={{ display: "flex", padding: 20 }}>
                         {visibleTexts[index]}
