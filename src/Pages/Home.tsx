@@ -8,17 +8,17 @@ function Home() {
     return (
         <div style={{ justifyContent: "center", height: "100vh", width: '100vw',overflowX:'hidden', flexDirection:'column' }}>
             <div style={{ display: "flex", justifyContent: "center", height: '25%' }}>
-                <div style={{ paddingTop: '5%', display: "flex", width: '40%', height: '100%', justifyContent: "center", backgroundColor: 'red' }}>
+                <div style={{ paddingTop: '5%', display: "flex", width: '40%', height: '100%', justifyContent: "center"}}>
                     <div className='1' style={{ display: "flex", flexDirection: "column", width: '30%', alignItems: "center", height: '100%' }}>
-                        <section style={{ display: 'flex', backgroundColor: 'gray', justifyContent: "end", paddingRight: '5%', width: '100%', height: '100%' }}>
-                            <img src={viteLogo} alt="vite.svg" style={{ borderRadius: 50, backgroundColor: "black", width: '40%' }} />
+                        <section style={{ display: 'flex', justifyContent: "end", paddingRight: '5%', width: '100%', height: '100%' }}>
+                            <img src={viteLogo} alt="vite.svg" style={{ borderRadius: 50, width: '40%' }} />
                         </section>
-                        <section style={{ display: "flex", backgroundColor: 'green', justifyContent: "end", alignItems: "center", paddingRight: '5%', width: '100%', height: '100%' }}>
+                        <section style={{ display: "flex",  justifyContent: "end", alignItems: "center", paddingRight: '5%', width: '100%', height: '100%' }}>
                             <a href="https://github.com/IagoVinicius12" target="_blank"><img src={gitLogo} alt="github.svg" style={{ width: '40px' }} /></a>
                             <a href="https://www.linkedin.com/in/iago-vin%C3%ADcius-39b675304/" target="_blank"><img src={linkedinLogo} alt="linkedin.svg" style={{ width: '40px' }} /></a>
                         </section>
                     </div>
-                    <div className='2' style={{ display: "flex", backgroundColor: "blue", width: '70%', height: '100%', alignItems: "center", paddingBottom: '4%' }}>
+                    <div className='2' style={{ display: "flex", width: '70%', height: '100%', alignItems: "center", paddingBottom: '4%' }}>
                         <a>Olá sou Iago Vinicius Braga França, estudande e apaixonado por programação e desafios. Bem vindo(a) ao meu portifólio</a>
                     </div>
                 </div>
