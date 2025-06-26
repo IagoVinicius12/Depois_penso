@@ -6,10 +6,10 @@ import './carousel.css'
 
 export default function Carousel() {
     const imagens = [
-        '../../Images/SLA.jpg',
-        '../../Images/SLA1.jpg',
-        '../../Images/SLA2.jpg',
-        '../../Images/SLA3.jpg',
+        '/Images/SLA.jpg',
+        '/Images/SLA1.jpg',
+        '/Images/SLA2.jpg',
+        '/Images/SLA3.jpg',
     ];
     const texts = [
         'aaaaaa',
