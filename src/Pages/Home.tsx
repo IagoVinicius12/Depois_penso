@@ -1,4 +1,3 @@
-import React from "react";
 import viteLogo from "../../public/vite.svg"
 import gitLogo from '../../github.svg'
 import linkedinLogo from '../../linkedin.svg'
