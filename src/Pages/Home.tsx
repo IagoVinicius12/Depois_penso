@@ -3,6 +3,7 @@ import gitLogo from '../../github.svg'
 import linkedinLogo from '../../linkedin.svg'
 import Sla from '../../Images/SLA.jpg'
 import Carousel from "../Components/Carousel";
+import Curriculo from '../../arquivos/Currículo_Iago.pdf'
 
 function Home() {
     return (
@@ -41,7 +42,9 @@ function Home() {
             <div style={{display:"flex", width:'100%',height:'40%', justifyContent:"center", alignItems:"center", gap:'20px', paddingTop:'20px'}}>
                 <img src={Sla} alt="" style={{width:'30%', height:'100%', borderRadius:25}} />
                 <section style={{display:"flex",width:'30%',height:'100%',alignItems:'start'}}>
-                    ERUGFHUQIEBRGJIHARGJBN HRIAHGUIO4RH HGQERTHUIGHQ UIEHuiergh ue4rhgu9    qh4erg 9    uqgihr59iueqh
+                    Olá, me apresentando novamente, sou Iago Vinícius Braga França, estudante de Engenharia da Computação na UFU e ex-coordenador de Projetos da empresa júnior Conselt.
+                    <br></br>
+                    Atualmente busco uma forma de me desenvolver profissionalmente nas áreas de desenvolvimento web e software e continuar melhorando para um dia conseguir coordenar essa área e ao mesmo tempo ser alguém que se torne referência no meio onde estou.
                 </section>
             </div>
             <div style={{flex:1, height:'7%'}}></div>
@@ -50,7 +53,7 @@ function Home() {
             </div>
             <div style={{ display: "flex", justifyContent: "center", width: '100%', alignContent: "flex-start" , paddingBottom:'100px'}}>
                 <section style={{ width: '70%' }} >
-                    @aaaaasd
+                   <a href={Curriculo} target="_blank"> @aaaaasd</a>
                 </section>
             </div>
         </div>
