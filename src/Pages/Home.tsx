@@ -3,9 +3,12 @@ import gitLogo from '../../github.svg'
 import linkedinLogo from '../../linkedin.svg'
 import Sla from '../../Images/SLA.jpg'
 import Carousel from "../Components/Carousel";
+import './home.css'
 import Curriculo from '../../arquivos/Currículo_Iago.pdf'
+import TypingText from "../Components/Typingtext";
 
 function Home() {
+    const texto='Olá sou Iago Vinicius Braga França, estudante e apaixonado por programação e desafios. Bem vindo(a) ao meu portifólio'
     return (
         <div style={{ justifyContent: "center", height: "100vh", width: '100vw',overflowX:'hidden', flexDirection:'column' }}>
             <div style={{ display: "flex", justifyContent: "center", height: '25%' }}>
@@ -20,7 +23,7 @@ function Home() {
                         </section>
                     </div>
                     <div className='2' style={{ display: "flex", width: '70%', height: '100%', alignItems: "center", paddingBottom: '4%' }}>
-                        <a>Olá sou Iago Vinicius Braga França, estudande e apaixonado por programação e desafios. Bem vindo(a) ao meu portifólio</a>
+                        <TypingText text={texto} speed={30}/>
                     </div>
                 </div>
             </div>
@@ -41,11 +44,14 @@ function Home() {
             </div>
             <div style={{display:"flex", width:'100%',height:'40%', justifyContent:"center", alignItems:"center", gap:'20px', paddingTop:'20px'}}>
                 <img src={Sla} alt="" style={{width:'30%', height:'100%', borderRadius:25}} />
-                <section style={{display:"flex",width:'30%',height:'100%',alignItems:'start'}}>
+                <section   style={{display:"flex",width:'30%',height:'100%',alignItems:'start'}}>
+                    <p>
                     Olá, me apresentando novamente, sou Iago Vinícius Braga França, estudante de Engenharia da Computação na UFU e ex-coordenador de Projetos da empresa júnior Conselt.
                     <br></br>
                     Atualmente busco uma forma de me desenvolver profissionalmente nas áreas de desenvolvimento web e software e continuar melhorando para um dia conseguir coordenar essa área e ao mesmo tempo ser alguém que se torne referência no meio onde estou.
-                </section>
+                    </p>
+                    
+               </section>
             </div>
             <div style={{flex:1, height:'7%'}}></div>
             <div style={{ display: "flex", justifyContent: "center", width: '100%', alignContent: "flex-start" }}>
