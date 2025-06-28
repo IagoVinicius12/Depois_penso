@@ -7,8 +7,31 @@
     transform: scale(0);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.aparecendo_carrosel {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 37%;
+  gap: 5px;
+  animation: fadein 1.5s forwards !important;
+  position: relative;
+}
+
+@keyframes fadein {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
     opacity: 1;
   }
 }
