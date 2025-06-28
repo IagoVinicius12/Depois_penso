@@ -1,5 +1,5 @@
 .crescer_icone{
-    animation: aumentando 0.3s ease forwards
+    animation: aumentando 0.4s ease forwards
 }
 @keyframes aumentando{
     0%{
@@ -10,4 +10,58 @@
     }
 }
 
+.aparecendo{
+    animation: fadein 1s forwards;
+    position:relative;
+}
+@keyframes fadein{
+    0%{
+        top:-200px;
+        opacity: 0;
+    }
+    100%{
+        top:0px;
+        opacity: 1;
+    }
+}
 
+.entrando_direita{
+    animation:vindo_direita 1s forwards;
+    position:relative;
+}
+@keyframes vindo_direita{
+    0%{
+        right:-100px;
+        opacity: 0;
+    }
+    50%{
+        right: 10px;
+        opacity: 1;
+    }
+    75%{
+        right: -10px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+.entrando_esquerda{
+    animation:vindo_esquerda 1s forwards;
+    position:relative;
+}
+@keyframes vindo_esquerda{
+    0%{
+        left:-100px;
+        opacity: 0;
+    }
+    50%{
+        left: 10px;
+        opacity: 1;
+    }
+    75%{
+        left: -10px;
+    }
+    100%{
+        left: 0px;
+    }
+}

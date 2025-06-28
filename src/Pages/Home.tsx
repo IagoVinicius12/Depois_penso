@@ -13,7 +13,7 @@ function Home() {
     const [hovered, setHovered] = useState('')
     return (
         <div style={{ justifyContent: "center", height: "100vh", width: '100vw', overflowX: 'hidden', flexDirection: 'column' }}>
-            <div style={{ display: "flex", justifyContent: "center", height: '25%' }}>
+            <div className="aparecendo" style={{ display: "flex", justifyContent: "center", height: '25%'}}>
                 <div style={{ paddingTop: '5%', display: "flex", width: '40%', height: '100%', justifyContent: "center" }}>
                     <div className='1' style={{ display: "flex", flexDirection: "column", width: '30%', alignItems: "center", height: '100%' }}>
                         <section style={{ display: 'flex', justifyContent: "end", paddingRight: '5%', width: '100%', height: '100%' }}>
@@ -49,8 +49,8 @@ function Home() {
                     Sobre Mim</a></section>
             </div>
             <div style={{ display: "flex", width: '100%', height: '40%', justifyContent: "center", alignItems: "center", gap: '20px', paddingTop: '20px' }}>
-                <img src={Sla} alt="" style={{ width: '30%', height: '100%', borderRadius: 25 }} />
-                <section style={{ display: "flex", width: '30%', height: '100%', alignItems: 'start' }}>
+                <img src={Sla} alt="" className="entrando_esquerda" style={{ width: '30%', height: '100%', borderRadius: 25 }} />
+                <section className="entrando_direita" style={{ display: "flex", width: '30%', height: '100%', alignItems: 'start' }}>
                     <p>
                         Olá, me apresentando novamente, sou Iago Vinícius Braga França, estudante de Engenharia da Computação na UFU e ex-coordenador de Projetos da empresa júnior Conselt.
                         <br></br>
